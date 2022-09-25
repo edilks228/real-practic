@@ -27,19 +27,19 @@
                 <nav class="header__nav">
                     <ul class="header_list">
 						<li class="header_item">
-							<a href="#glavnoe" class="header_link">главная</a>
+							<a href="#glavnoe" class="header_link js-scroll">главная</a>
 						</li>
 						<li class="header_item">
-							<a href="#ob-avtore" class="header_link ">об авторе</a>
+							<a href="#ob-avtore" class="header_link js-scroll">об авторе</a>
 						</li>
 						<li class="header_item">
-							<a href="#raboty" class="header_link ">работы</a>
+							<a href="#raboty" class="header_link js-scroll">работы</a>
 						</li>
 						<li class="header_item">
-							<a href="#process" class="header_link ">процесс</a>
+							<a href="#process" class="header_link js-scroll">процесс</a>
 						</li>
                         <li class="header_item">
-							<a href="#contavty" class="header_link ">контакты</a>
+							<a href="#contacty" class="header_link js-scroll">контакты</a>
 						</li>
 					</ul>
                 </nav>
@@ -50,7 +50,7 @@
 
     <main class="main">
         <!--intro-start-->
-        <div class="intro">
+        <section class="intro" id="glavnoe">
             <div class="wrapper">
                 <div class="intro__inside">
                     <img class="intro__img" src="./img/svg/Frame.png" alt="eror404">
@@ -64,26 +64,26 @@
                             Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                         </p>
 
-                        <button type="button" class="intro__inside__sibmit">НАПИСАТЬ МНЕ</button>
+                        <button type="button" href="#contacty" class="intro__inside__sibmit js-scroll">НАПИСАТЬ МНЕ</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!--intro-end-->
         <!--info-start-->
-        <div class="info">
-                <div class="info__inside"> 
-                    <h2 class="info__title">
-                        Обо мне
-                    </h2>
-                    <p class="info__subtitle">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-                    </p>
-                </div> 
-        </div>
+        <section class="info">
+            <div class="info__inside"> 
+                <h2 class="info__title">
+                    Обо мне
+                </h2>
+                <p class="info__subtitle">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                </p>
+            </div> 
+        </section>
         <!--info-end-->
         <!--info-line-start-->
-        <div class="info-line">
+        <section class="info-line">
             <div class="info-line__inside">
                 <div class="info-line__img">
                     <img src="./img/svg/project.png" alt="eror404" class="info-line__imgg">
@@ -153,10 +153,10 @@
                 </div>
                 
             </div>
-        </div>
+        </section>
         <!--info-line-end-->
         <!--my abilities-start-->
-        <div class="my-abilities">
+        <section class="my-abilities" id="ob-avtore">
             <div class="my-abilities__inside">
                 <div class="my-abilities__info">
                     <h3 class="my-abilities__title">
@@ -165,26 +165,159 @@
                     <p class="my-abilities__subtitle">
                         Adobe Photoshop
                     </p>
-                    <div class="my-abilities__line">
+                    <div class="my-abilities__line__container"> 
+                        <div class="my-abilities__line">
+                        </div>
+                        <div class="my-abilities__line_hover">   
+                        </div>
                     </div>
+                    
                     <p class="my-abilities__subtitle">
                         Adobe Photoshop
                     </p>
-                    <div class="my-abilities__line">
+                    <div class="my-abilities__line__container"> 
+                        <div class="my-abilities__line">
+                        </div>
+                        <div class="my-abilities__line_hover">   
+                        </div>
                     </div>
+                   
                     <p class="my-abilities__subtitle">
                         Adobe Photoshop
                     </p>
-                    <div class="my-abilities__line">
+                    <div class="my-abilities__line__container"> 
+                        <div class="my-abilities__line">
+                        </div>
+                        <div class="my-abilities__line_hover">   
+                        </div>
                     </div>
+                    
                 </div>
                 <div class="my-abilities__img">
                     <img src="./img/Rectangle 3.jpg" alt="eror404">
                 </div>
             </div>
-        </div> 
-        <!--my abilities-end-->
+        </section> 
+        <!--my-abilities-end-->
+        <!--videos-section-start-->
+        <section class="video-section" id="raboty">
+            <div class="video-section__inside">
+                <h4 class="video-section__title">
+                    Как я работаю
+                </h4>
+                
+                <p class="video-section__subtitle">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов  на латинице с начала XVI века.
+                </p>
+                
+                <iframe class="video__element" src="https://www.youtube.com/embed/4yNbmAAQQ3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!--videos section end-->
+        <!--grid section-start-->
+        <section class="photo" id="process">
+            <div class="photo__inside">
+                <div class="photo__inside1"> 
+                    <div class="photo__section">
+                        <img src="./img/paper.jpg" alt="eror404" class="gird__img__paper">
+                    </div> 
+
+                    <div class="photo__section">  
+                        <img src="./img/notebook.jpg" alt="eror404" class="gird__img__notebook">
+                    </div> 
+
+                    <div class="photo__section">    
+                        <img src="./img/paper.jpg" alt="eror404" class="gird__img__paper">
+                    </div> 
+
+                    <div class="photo__section">    
+                        <img src="./img/notebook.jpg" alt="eror404" class="gird__img__notebook">
+                    </div>  
+                </div>
+                <div class="photo__inside2"> 
+                    <div class="photo__section">    
+                        <img src="./img/paper.jpg" alt="eror404" class="gird__img__paper">
+                    </div> 
+
+                    <div class="photo__section">        
+                        <img src="./img/notebook.jpg" alt="eror404" class="gird__img__notebook">
+                    </div> 
+
+                    <div class="photo__section">    
+                        <img src="./img/paper.jpg" alt="eror404" class="gird__img__paper">
+                    </div>
+
+                    <div class="photo__section">    
+                        <img src="./img/notebook.jpg" alt="eror404" class="gird__img__notebook">
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!--grid section-end-->
+        <!--microsoft icon-start-->
+        <div class="microsoft-icon">
+            <div class="microsoft-icon__inside">
+                <div class="microsoft-icon__photo">
+                    <img src="./img/svg/microsoft.png" alt="eror404" class="microsoft">
+                </div>
+                <div class="microsoft-icon__photo">
+                    <img src="./img/svg/microsoft.png" alt="eror404" class="microsoft">
+                </div>
+                <div class="microsoft-icon__photo">
+                    <img src="./img/svg/microsoft.png" alt="eror404" class="microsoft">
+                </div>
+                <div class="microsoft-icon__photo">
+                    <img src="./img/svg/microsoft.png" alt="eror404" class="microsoft">
+                </div>
+            </div>
+        </div>
+        <!--microsoft-icon-end-->
+        <!--comments-start-->
+        <section class="comment" id="contacty">
+                <div class="comment__subjects">
+                    <div class="comment__text">
+                        <div class="comment__title">
+                            <h5>Хотите веб-сайт?</h5>
+                        </div>
+                        <div class="comment__subtitle">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        </div>
+                    </div>
+                    <div class="comment__input">
+                        <div class="comment__input__first-line">
+                            <input type="text" name="name" class="comment__input-name" placeholder="Ваше имя">
+                            <input type="email" name="emale" class="comment__input-email" placeholder="Ваш e-mail">
+                        </div>
+                        <div class="comment__input__second-line">
+                            <input type="text" name="text" class="comment__input-comment" placeholder="Сообщение">
+                        </div>
+                    </div>
+                    <div class="comment__button">
+                        <button type="submit" class= "comment__button__submit">отправить</button>
+                    </div>
+                </div>
+        </section>
+        <!--comments-end-->
     </main>
+    <!--footer-start-->
+    <footer >
+        <div class="footer__inside">
+            <div class="footer__text">
+                <p class="text__name">
+                    Иванов Иван
+                </p>
+                <p class="text__prava">
+                    (с) 2018. Все права защищены.
+                </p>
+            </div>
+            <div class="footer__logo">
+                <img src="./img/svg/Vector.png" alt="eror404" class="logo">
+                <img src="./img/svg/Vector.png" alt="eror404" class="logo">
+                <img src="./img/svg/Vector.png" alt="eror404" class="logo">
+            </div>
+        </div>
+    </footer>
+    <!--footer-end-->
     <script src="./js/main.js"></script>
 </body>
 </html>

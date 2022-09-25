@@ -165,7 +165,7 @@ border: none;
   margin-right: 0;
 }
 /*info-line-styles-end*/
-/*my abilities-start*/
+/*my abilities-styles-start*/
 .my-abilities{
   display: flex;
   justify-content: center;
@@ -202,12 +202,193 @@ border: none;
   margin-top: 30px;
   margin-bottom: 18px;
 }
-
-
-.my-abilities__line{
-  width: 349.36px;
-  height: 4px;
-  background: #34547A;
+.my-abilities__line__container{
+  display: flex;
+  flex-direction: row;
 }
 
-/*my abilities-end*/
+.my-abilities__line{
+  display: flex;
+  flex-direction: row;
+  width: 349.36px;
+  height: 4px;
+  background: #34547A;;
+}
+.my-abilities__line_hover{
+  width: 95px;
+  height: 4px;
+  background: #C4C4C4;
+}
+body main .my-abilities .my-abilities__inside .my-abilities__line_hover:hover{
+  background: #34547A;;
+}
+
+/*my abilities-styles-end*/
+/*video section-styles-start*/
+.video-section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 804px;
+  margin-bottom: 128px;
+  
+}
+.video-section__inside{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+  max-width: 1110px;
+}
+
+
+.video-section__title{
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.video-section__subtitle{
+
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-bottom: 57px;
+}
+.video__element{
+  width: 1110px;
+  height: 600px;
+}
+/*video section-styles-end*/
+.photo{
+  margin-bottom: 72px;
+}
+.photo__inside1{
+  display: flex;
+  max-height: 960px;
+}
+.photo__inside2{
+  display: flex;
+  max-height: 960px;
+}
+.photo__section{
+  max-width: 480px;
+  max-height: 480px;
+}
+
+/*grid section-styles-start*/
+
+/*microsoft icon-styles-start*/
+.microsoft-icon{
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 200px;
+}
+.microsoft-icon__inside{
+  display: flex;
+  flex-direction: row;
+  max-width: 1110;
+}
+.microsoft-icon__photo{
+  margin-right: 30px;
+}
+.microsoft-icon__photo:last-child{
+  margin-right: 0;
+}
+/*microsoft icon-styles-end*/
+
+/*comments-start*/
+.comment{
+  display: flex;
+  justify-content: center;
+  max-height: 562px;
+  margin-bottom: 100px;
+}
+.comment__subjects{
+  max-width: 540px;
+}
+.comment__title{
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+.comment__subtitle{
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-bottom: 65px;
+}
+.comment__input__first-line{
+  display: flex;
+
+}
+.comment__input-name{
+  margin-right: 30px;
+  width: 255px;
+  height: 50px;
+}
+.comment__input-email{
+  width: 255px;
+  height: 50px;
+}
+.comment__input-comment{
+  width: 540px;
+  height: 175px;
+  margin-top: 20px;
+}
+.comment__button{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.comment__button__submit{
+  width: 190px;
+  height: 55px;
+  background: #34547A;
+  color: #FFFFFF;
+  border: 0ch;
+}
+/*comments-end*/
+/*footer-start*/
+
+footer{
+  display: flex;
+  justify-content: center;
+  height: 151px;
+  background: #34547A;
+}
+.footer__inside{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1126px;
+}
+.text__name{
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.text__prava{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+}
+.logo{
+  margin-right: 22px;
+}
+.logo:last-child{
+  margin-right: 0;
+}
+/*footer-end*/
