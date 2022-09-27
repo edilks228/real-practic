@@ -55,14 +55,37 @@ img{
 .header_item:last-child{
     margin-right: 0px;
 }
-.header_link{
+.header__link{
   font-size: 16px;
   line-height: 26px;
   color: black;
   text-decoration: none;
 }
-.header_link:hover,.header_link:focus,.header_link:active{
+.header__link:hover, .header__link:focus, .header__link:active{
   color: #34547A;
+}
+.header__burger{
+  display: none;
+  width: 40px;
+  height: 28px;
+  position: relative;
+}
+.burger__line{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
+.burger__line_first{
+  top: 0;
+}
+.burger__line_second{
+  top: 50%;
+}
+.burger__line_third{
+  bottom: 0;
 }
   /* header-styles-end*/
   /* info-styles-start*/
@@ -150,6 +173,7 @@ border: none;
   display: flex;
   flex-direction: row;
   max-width: 1091px;
+  width: 100%;
   height: 50px;
 }
 .info-line__img{
@@ -169,7 +193,7 @@ border: none;
 .my-abilities{
   display: flex;
   justify-content: center;
-  height: 450px;
+  min-height: 450px;
   margin-bottom: 201px;
 }
 .my-abilities__inside{
@@ -179,7 +203,8 @@ border: none;
 }
 .my-abilities__img{
   height: 450px;
-  width: 555px;
+  max-width: 555px;
+  width: 100%;
   margin-left: 150px;
 }
 .my-abilities__info{
@@ -261,7 +286,8 @@ body main .my-abilities .my-abilities__inside .my-abilities__line_hover:hover{
   margin-bottom: 57px;
 }
 .video__element{
-  width: 1110px;
+  max-width: 1110px;
+  width: 100%;
   height: 600px;
 }
 /*video section-styles-end*/
@@ -335,15 +361,18 @@ body main .my-abilities .my-abilities__inside .my-abilities__line_hover:hover{
 }
 .comment__input-name{
   margin-right: 30px;
-  width: 255px;
+  max-width: 255px;
+  width: 100%;
   height: 50px;
 }
 .comment__input-email{
-  width: 255px;
+  max-width: 255px;
+  width: 100%;
   height: 50px;
 }
 .comment__input-comment{
-  width: 540px;
+  max-width: 540px;
+  width: 100%;
   height: 175px;
   margin-top: 20px;
 }
@@ -353,7 +382,8 @@ body main .my-abilities .my-abilities__inside .my-abilities__line_hover:hover{
   margin-top: 50px;
 }
 .comment__button__submit{
-  width: 190px;
+  max-width: 190px;
+  width: 100%;
   height: 55px;
   background: #34547A;
   color: #FFFFFF;
@@ -372,7 +402,8 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1126px;
+  max-width: 1126px;
+  width: 100%;
 }
 .text__name{
   font-weight: 500;
@@ -392,3 +423,104 @@ footer{
   margin-right: 0;
 }
 /*footer-end*/
+
+/*media start*/
+@media screen and (max-width: 960px){
+  .intro__inside{
+    flex-direction: column;
+  }
+  .intro__text{
+    padding-left: 0;
+  }
+  .intro_title{
+    text-align: center;
+  }
+  .intro__subtitle{
+    text-align: center;
+  }
+  .my-abilities__inside{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .my-abilities__info{
+    padding-left: 15px;
+  }
+  .my-abilities__img{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
+  .footer__inside{
+    padding: 0 10px 0 10px;
+  }
+  
+}
+@media screen and (max-width: 793px) {
+  .header__burger{
+    display: block;
+  }
+  .header_wrapper{
+    padding-top: 28px;
+}
+  .header__nav{
+    width: 100%;
+    height: 100%;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#367eb3 ;
+    color: #fff;
+    z-index: 10;
+    padding: 75px;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+
+  .header_nav_active{
+    transform: translateX(0);
+  }
+.header__nav-close{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 11;
+  }
+  .header__nav-close-line{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  }
+  .header__nav-close-line:first-child{
+  -webkit-transform: translateY(-50%) rotate(45deg);
+      -ms-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  }
+  .header__nav-close-line:last-child{
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+      -ms-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  }
+  .header_item{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    z-index: 11;
+
+  }
+  .header_item:last-child{
+    margin-bottom: 0;
+  }
+  .header_link{
+    font-size: 42px;
+    line-height: 48 px;
+  
+  }
+  
+}
+/*media end*/
